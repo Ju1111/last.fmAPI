@@ -1,13 +1,20 @@
 import React, { PureComponent } from 'react'
+import { Artists } from '../components/Artists'
 import './LandingPage.css'
 
 export class Welcome extends PureComponent {
 
   render() {
     return(
-      <h2>
-        Music is the language of the soul...
-      </h2>
+      <div class="indexPage">
+        <h2>
+          Music is the language of the soul...
+        </h2>
+        <h4>
+          And here is the music that moved me this week
+        </h4>
+        <Artists />
+      </div>
     )
   }
 }
