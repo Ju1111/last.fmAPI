@@ -1,13 +1,14 @@
 import React, { PureComponent } from 'react'
 import { getToken } from '../actions/authentication'
+import { connect } from 'react-redux'
 
-export class Artists extends PureComponent {
+class Token extends PureComponent {
 
   render() {
     return(
       <div>
         <h2>
-          This will render an artist
+          Click the button for the first step of authentication!
         </h2>
         <button onClick={ getToken }>
           Click Me
@@ -16,3 +17,5 @@ export class Artists extends PureComponent {
     )
   }
 }
+
+export default connect(null, { getToken })(Token)

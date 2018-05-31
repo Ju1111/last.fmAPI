@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import { Artists } from '../components/Artists'
+import Token from '../components/Artists'
 import './LandingPage.css'
 
 export class Welcome extends PureComponent {
@@ -13,7 +13,7 @@ export class Welcome extends PureComponent {
         <h4>
           And here is the music that moved me this week
         </h4>
-        <Artists />
+        <Token />
       </div>
     )
   }
